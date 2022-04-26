@@ -9,7 +9,7 @@
 import axios, { AxiosRequestConfig } from 'axios'
 
 const request = axios.create({
-  baseURL: import.meta.env.VITE_API_BASEURL
+  // baseURL: import.meta.env.VITE_API_BASEURL
 })
 
 // request 不支持泛型

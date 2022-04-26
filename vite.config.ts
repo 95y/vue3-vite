@@ -25,5 +25,16 @@ export default defineConfig({
         additionalData: '@import "@/styles/variables.scss";'
       }
     }
+  },
+  server: {
+    proxy: {
+      '/admin': {
+        target: 'https://shop.fed.lagou.com/api/',
+        changeOrigin: true
+        // 路径重写
+        // rewrite不设置 =>  http://jsonplaceholder.typicode.com/api/xxx   /api/xxx => http://jsonplaceholder.typicode.com/api/xxx
+        // rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
   }
 })
