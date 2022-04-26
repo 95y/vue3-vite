@@ -1,7 +1,15 @@
+/*
+ * @Author: your name
+ * @Date: 2022-04-26 14:57:39
+ * @LastEditTime: 2022-04-26 16:47:10
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \vue3-vite\src\utils\request.ts
+ */
 import axios, { AxiosRequestConfig } from 'axios'
 
 const request = axios.create({
-  baseURL: 'https://shop.fed.lagou.com/api/admin'
+  baseURL: import.meta.env.VITE_API_BASEURL
 })
 
 // request 不支持泛型
@@ -10,6 +18,8 @@ const request = axios.create({
 
 // 请求拦截器
 request.interceptors.request.use(config => {
+  console.log(config)
+
   // 统一设置用户身份 token
   return config
 }, error => {

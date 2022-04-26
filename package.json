@@ -12,7 +12,7 @@
     "commit": "git add -A && git-cz"
   },
   "dependencies": {
-    "axios": "^0.27.0",
+    "axios": "^0.27.1",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"
