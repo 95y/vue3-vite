@@ -15,7 +15,7 @@ request.interceptors.request.use(config => {
 // 响应拦截器
 request.interceptors.response.use(response => {
   // 统一处理接口响应错误, 比如 token 过期无效、服务的异常等
-  return response
+  return response.data
 }, error => {
   return Promise.reject(error)
 })
