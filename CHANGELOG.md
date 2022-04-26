@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/95y/vue3-vite/compare/v0.0.2...v0.0.3) (2022-04-26)
+
+
+### Features
+
+* 接口类型基本处理 ([258fc56](https://github.com/95y/vue3-vite/commit/258fc565575c58c333a0765ed23d02aa6c226940))
+
 ### [0.0.2](https://github.com/95y/vue3-vite/compare/v0.0.1...v0.0.2) (2022-04-26)
 
 
