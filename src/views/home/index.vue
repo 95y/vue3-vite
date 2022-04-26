@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <h1>
     首页
     {{ $store.state.count }}
     {{ store.state.count }}
     <HelloWorld />
-  </div>
+  </h1>
 </template>
 
 <script setup lang="ts">
@@ -18,6 +18,9 @@ const store = useStore()
 console.log(store.state.count)
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+@import '@/styles/variables.scss';
+h1 {
+  color: $color;
+}
 </style>
