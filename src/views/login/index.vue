@@ -1,11 +1,13 @@
 <template>
-  <router-view />
+  <div>
+    登录
+  </div>
 </template>
 
 <script setup lang="ts">
 
 </script>
 
-<style>
+<style scoped>
 
 </style>
