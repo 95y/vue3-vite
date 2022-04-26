@@ -9,9 +9,7 @@
 
 <script setup lang="ts">
 import { useStore } from '../../store'
-import User from '@/api/user'
 import HelloWorld from '@comp/HelloWorld.vue'
-console.log(User)
 
 const store = useStore()
 
