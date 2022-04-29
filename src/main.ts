@@ -4,7 +4,7 @@ import router from './router'
 import { createPinia } from 'pinia'
 
 // 加载全局样式
-import './styles/index.scss'
+import '@/styles/index.scss'
 
 const pinia = createPinia()
 
