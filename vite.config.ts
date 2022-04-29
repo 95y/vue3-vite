@@ -6,6 +6,7 @@ import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import PurgeIcons from 'vite-plugin-purge-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +21,14 @@ export default defineConfig({
     }),
     Components({
       resolvers: [ElementPlusResolver()]
+    }),
+    PurgeIcons({
+      /** PurgeIcons Options */
+      content: [
+        '**/*.html',
+        '**/*.js',
+        '**/*.vue'
+      ]
     })
   ],
   resolve: {

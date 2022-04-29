@@ -5,6 +5,7 @@ import { createPinia } from 'pinia'
 
 // 加载全局样式
 import '@/styles/index.scss'
+import '@purge-icons/generated'
 
 const pinia = createPinia()
 
