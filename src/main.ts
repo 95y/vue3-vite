@@ -1,12 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import { store, key } from './store'
+import { createPinia } from 'pinia'
 
 // 加载全局样式
 import './styles/index.scss'
 
+const pinia = createPinia()
+
 createApp(App)
   .use(router)
-  .use(store, key)
+  .use(pinia)
   .mount('#app')

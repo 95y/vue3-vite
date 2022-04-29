@@ -1,12 +1,16 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-const routes: RouteRecordRaw[] = [
-  { path: '/', name: 'Home', component: () => import('../views/home/index.vue') },
-  { path: '/login', name: 'Login', component: () => import('../views/login/index.vue') }
-]
+const routes: RouteRecordRaw[] = []
+
+const modules = import.meta.globEager('./modules/*.ts')
+
+for (const path in modules) {
+  routes.push(...modules[path].default)
+}
 
 const router = createRouter({
-  history: createWebHistory(), // 路由模式
+  history: createWebHashHistory(), // 路由模式
   routes // 路由规则
 })
 
