@@ -4,6 +4,7 @@
     refCount: {{ refCount.num }}
   </div>
   <div>
+    <el-button>+1</el-button>
     <button
       class="bg-green-300 text-white rounded px-2 py-1"
       @click="countStore.increment()"
