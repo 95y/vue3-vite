@@ -12,6 +12,7 @@
     "commit": "git add -A && git-cz"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
     "@iconify/iconify": "^2.2.1",
     "axios": "^0.27.1",
     "element-plus": "^2.1.11",
